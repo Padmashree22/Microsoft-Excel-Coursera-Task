@@ -1,0 +1,41 @@
+﻿Case study
+Aimee at Adventure Works has asked you to help her prepare an Excel file that she will present at a management team financial review meeting. The worksheet tracks the items sold by one of Adventure Work’s divisions. The file needs to contain results such as costs, revenue, and profit. Your task is to create the formulas and calculations for this sheet.
+
+Step 1: Download the file
+Download and open the Microsoft Excel workbook Revenue figures.xlsx. The workbook contains only one worksheet called Jan-Dec. 
+
+Jan-Dec worksheet showing pre-filled data and blank areas for formulas.
+Step 2: Create the calculations
+Create a calculation in cell G4 to calculate the Purchase Cost.
+
+Tip: This would be the number of stock items purchased multiplied by the wholesale cost.
+
+Create a calculation in cell H4 that works out the total shipping costs for the number of items ordered. The shipping cost per item amount data is in cell P1.
+
+Tip: Don’t forget that you will be copying this formula down the column using Autofill. So, the P1 reference needs to stay constant. (Make a note of how this formula is written.)
+
+Create a calculation in I4 that adds together the purchase and total shipping costs.
+
+Create a calculation in J4 that works out the retail price for the individual item in row 4. The retail price must be set high enough to cover the following: 
+
+The wholesale cost of each item.
+
+The shipping cost for the individual item.
+
+Plus a 50% markup.
+
+Tip: Your formula needs to add the two costs together and then calculate a 50% increase. You’ll need to use parentheses to ensure the calculation works correctly. Also, include dollar signs on the P1 cell reference.
+
+Create a calculation in L4 that determines the amount of revenue the company earned by selling the number of items listed in K4 by the retail price you have just worked out in J4. 
+
+Create a calculation in M4 that subtracts the Total Cost figure from the Revenue figure to generate the Profit figure.
+
+Use the Autofill shortcut on cell G4 to copy the formula down through the column. Then use the double-click shortcut to repeat this action for the formulas in H4, I4, J4, L4, and M4.
+
+Tip: When you double-click the shortcut for Autofill, Excel can use the blocks of completed cells to the left as a reference. As you are double-clicking to copy each formula, check which block of data Excel is using to decide where to stop the copy operation.
+
+Cell P3 must display the overall profit margin. A profit margin figure indicates what percentage of the sales turned into profit. The formula to calculate this is similar to the percentage difference formula already demonstrated. In this situation the formula will be:
+
+=(Total Revenue – Total Costs)/Total Revenue
+
+In cell P3, create this formula using the Total Costs total in cell I201 and the Revenue total in cell L201 to work out the profit margin.

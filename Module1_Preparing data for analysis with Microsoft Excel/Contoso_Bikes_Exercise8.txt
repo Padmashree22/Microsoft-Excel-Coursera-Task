@@ -1,0 +1,51 @@
+﻿Case study
+Jamie, at Adventure Works, is attending a meeting with a customer, Contoso Bikes. Help Jamie to complete a worksheet that contains a summary of the last order placed by Contoso Bikes. 
+
+The worksheet needs the following additional information for Contoso Bikes:
+
+Delivery charges
+
+Discount rates
+
+And regional totals
+
+Let’s create the calculations to generate this information for Jamie.
+
+Step 1: Download the file
+Download and open the Microsoft Excel workbook Contoso Bikes.xlsx. The workbook contains only one worksheet called Order Details.
+
+The sheet outlines the items ordered by Contoso Bikes and already includes information on the cost per unit and quantities ordered. 
+
+If the subtotal amount in column G is over $10,000, then the customer will be given a 10% discount. You need to create a formula in H7 to work out if a discount is applicable.
+
+The delivery charge is based on region. You need to create a formula in L7 that checks the region listed in J7 and calculates the appropriate delivery charge. 
+
+Jamie has also asked for totals by region to be added in cells H2 to H4. 
+
+Order details worksheet with prefilled sales data. No formulas.
+Step 2: Create the Calculations
+Use an IF function to create a formula in cell H7. This formula must check the subtotal amount in column G7. If the amount is greater than $10,000 then the formula should display the result 10%. If the amount is less than $10,000, then the formula should display the result 0.
+
+TIP: You can type 10% as the “value if true” entry. It does not need double quotes because Excel recognizes it as a number.
+
+Create a formula in cell L7 using the IFS function to calculate the delivery charge applicable to each row. The formula needs to check the delivery region listed in J7 and calculate the appropriate amount to charge. 
+
+The cost for delivery to each region is listed in the cell range D2 to D4.If the delivery region is not A, B, or C, then the formula should return a value of 0. Include dollar signs to make the D references for the charges absolute.
+
+TIP: Don’t forget that the IFS function needs to test for text characters, and those characters need to be in double quotes in the formula so that Excel recognizes that they are text.
+
+Create a formula in cell M7 that adds together the total (excluding the delivery amount) in K7 and the delivery charge in L7. 
+
+Use Autofill to copy the formulas in H7, L7 and M7 down to row 16.
+
+Create a SUMIF formula in cell H2 that calculates a sales total (excluding delivery) for Region A. 
+
+TIP: The SUMIF formula needs to check for criteria A in the cell range J7 to J16 and total the numbers in the cell range K7 to K16.
+
+Create a SUMIF formula in cell H3 that provides a sales total (excluding delivery) for Region B. 
+
+TIP: The SUMIF formula needs to check for criteria B in the cell range J7 to J16 and total the numbers in the cell range K7 to K16.
+
+Create a SUMIF formula in cell H4 that provides a sales total (excluding delivery) for Region C. 
+
+TIP: The SUMIF formula needs to check for criteria C in the cell range J7 to J16 and total the numbers in the cell range K7 to K16.

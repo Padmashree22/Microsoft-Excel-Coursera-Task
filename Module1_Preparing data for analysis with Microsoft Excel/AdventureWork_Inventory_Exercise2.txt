@@ -1,0 +1,28 @@
+﻿Case study
+Jamie at Adventure Works wants to improve the company’s product inventory file. This includes making the data easier to read and locate. You are part of the team creating the inventory for submission to a management review. You are familiarizing yourself with the content in the inventory file and decide to use the Sort feature to organize the data to suit your requirements.
+
+Step 1: Download and customize the file
+Download and open the Microsoft Excel workbook Adventure Works Inventory.xlsx. The file should contain one worksheet named Products that consists of 151 rows and 9 columns.
+
+Products worksheet with prefilled content. Not yet sorted.
+
+You are using the Sort feature to rearrange the data. So, add a visual marker in the data to determine the effects of the different sorts. Select cells A32 to I32 and apply a yellow background. On the Home tab, select the Font group, then select the background color. 
+
+Step 2: Performing alpha-numeric sorts
+View the data organized by Product Name in ascending order.
+
+Tip: Don’t forget to have the cursor in the correct column before selecting the Sort choice. Also, don’t forget that Undo will reverse a sort if you’ve made an error. Monitor the position of the colored row to ensure that the sort is working as you expect.
+
+Sort the data by Product Name in descending order.
+
+Sort the data by Date Entered so that the oldest entry is at the top. 
+
+Tip: Excel stores dates as numbers, so this will be a numeric sort.
+
+Sort the data by Supplier using the shortcut Sort Ascending button.
+
+Apply a sort that sorts the data by Supplier in ascending order and then by Units in Stock in descending order.
+
+Tip: Remember the Sort choice in the data ribbon.
+
+Reverse this sort using the Undo feature.
