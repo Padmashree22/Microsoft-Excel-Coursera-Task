@@ -1,0 +1,19 @@
+The task covers the following elements:
+
+	-Connecting to data sources
+
+	-Column data types 
+
+	-Common data errors 
+
+	-Combining tables with merge and append 
+
+	-Advanced data transformation techniques 
+
+	-Loading and staging data 
+
+	-Profiling data by using column quality 
+
+	-Column distribution and column profile, and its practical application in identifying data anomalies. 
+
+In this exercise, we will apply your knowledge in an end-to-end scenario by using Power Query to clean and transform multiple data sources and join and merge them. We’ll also examine the valid, error, empty, min, max, unique, and distinct values in the rows. This will allow the user to identify the anomalies in the data. Finally, we will remove the data sources with anomalies. This exercise will help us understand how to clean, transform, join, and merge data sources in Power Query, and identify potential data anomalies by using data profiling tools.
