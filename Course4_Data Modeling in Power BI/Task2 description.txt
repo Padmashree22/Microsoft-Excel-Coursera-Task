@@ -1,0 +1,52 @@
+Step 1: Download and connect to the Adventure Works Dataset.
+Download and save the Power BI project AdventureWorks.pbix from the Coursera platform. The model contains five tables of data: Salesperson, Region, Date, Products and Sales.
+
+The Power BI project is already configured to remove duplicate values. As the following diagram outlines, you must ensure the model relationships are appropriately set with cardinality and cross-filter direction.
+
+Data model
+Step 2: Create a Quick Measure.
+To create the Running total in Year quick measure, access the Data view, then Calculations group, and select Quick measure to open the Quick measure window. 
+
+Select quick measure
+Under the Calculations dropdown menu, select Running total from the Totals calculation group.
+
+Edit quick measure
+Drag the Total Sales column from the Sales table and drop it over the base value section. Drag the Year column from the Date table and drop over the Field section of the Quick measure dialog box. Retain the direction setting of Ascending.
+
+Edit quick measure
+Select Add to complete the addition of your new quick measure. A new Total Sales measure appears in the Data pane under the Sales table.
+
+Revenue running total in Year = 
+CALCULATE(
+	SUM('Sales'[Revenue]),
+	FILTER(
+		ALLSELECTED('Date'[Year]),
+		ISONORAFTER('Date'[Year], MAX('Date'[Year]), DESC)
+	)
+)
+
+
+Add quick measure
+Power BI auto-generates the DAX code and names the measure as Total Sales running total in Year. Select the measure from the data pane, and in the formula bar, rename the measure as Running total in Year.
+
+Input formula
+While selecting the measure, access the Measure tools tab and format the measure as currency with two decimal places.
+
+Format data
+Step 3: Create a measure using a DAX query.
+To create a new measure in the Sales table for Total revenue, select the Sales table from the Data pane on the right side of Power BI’s interface. Access the calculations group in the data view and select New measure to expand the formula bar. Copy and paste the following DAX code into the formula bar:
+
+1
+Total Revenue = SUMX ( Sales, Sales[Unit Price] * Sales[Quantity] )
+Sales is the table name to be referenced.
+
+Unit price and Quantity in square brackets are the columns that must be multiplied to calculate the total revenue.
+
+The SUMX function iterates over each table row to calculate the total revenue.
+
+Input formula
+Select the newly created Total Revenuemeasure from the Data pane under the Sales table. Then access the Measure tools tab and format the measure as currency with two decimal places.
+
+Format data
+Step 4: Save the Power BI project.
+To save the project, open the File menu, select Save As, and provide an appropriate name for the project along with a path to the folder on your computer.
