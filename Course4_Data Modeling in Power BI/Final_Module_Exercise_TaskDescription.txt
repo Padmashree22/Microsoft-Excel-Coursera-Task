@@ -1,0 +1,109 @@
+Exercise: Building and optimizing a data model
+Introduction
+You should now understand the fundamentals of data modeling in Power BI. In this exercise, you’ll apply your knowledge of these concepts by building and optimizing a data model in Power BI.
+
+By completing this exercise, you’ll demonstrate your ability to:
+
+Work with advanced data models.
+
+Make use of DAX in Power BI.
+
+And optimize a model for performance in Power BI.
+
+Scenario
+Adventure Works’ sales are stagnating, and a growing inventory issue contributes to the problem. You're provided with sales figures, manufacturing data, and inventory levels. You need to turn this information into actionable insights so Adventure Works can solve its issues.
+
+By building and optimizing an efficient data model, you can revolutionize how Adventure Works operates and help to align its products, markets, and strategies for success.
+
+Instructions
+Download and open the Adventure Works Power BI report titled AdventureWorksSales.pbix and follow the prompts below to complete the exercise.
+
+Step 1: Download and import the data model.
+Download and save the Excel workbook AdventureWorksSales.pbix. The data model contains two datasets: Customers and Orders.
+
+Load the data from the Excel sheet into Power BI. Ensure you load all tables in the workbook.
+
+Access the model for editing by selecting Data view.
+
+Tip: You can import data using the Get Data drop-down menu.
+
+Step 2: Optimize data types.
+Your next step is to optimize the data types for the Customers and Orders tables so that the data model functions efficiently and accurately.
+
+Optimizing Data Types for the Customers table
+Select the Customers table from the fields pane.
+
+Access the Column tools tab on the top toolbar and navigate to the Data type option.
+
+Assign data types to each column as follows:
+
+Name = Text
+
+Surname = Text
+
+Location = Text
+
+ Date of Birth = Date
+
+Phone Number = Text
+
+Membership Tier = Text
+
+Customer Source = Text
+
+Optimizing Data Types for the Orders table
+Now that you have optimized the data types for the Customers table, you need to do the same for the Orders table. Select the Orders table from the Fields pane.
+
+Take a moment to observe the first 10 records. Note which record has the highest Order Quantity value. Next, note which payment method was most used.
+
+Access the Column tools tab on the top toolbar and navigate to the Data type option.
+
+Assign data types to each column as follows:
+
+Order Total = Decimal number
+
+Order ID = Whole Number
+
+Customer ID = Whole Number
+
+Product ID = Whole Number
+
+Order Date = Date
+
+Order Status = Text
+
+Order Quantity = Whole Number
+
+Payment Method = Text
+
+Billing Address = Text
+
+Discounts = Decimal Number
+
+Shipping Fee = Decimal Number
+
+Tracking Number = Text
+
+Tip: You can assign a data type by accessing the Column Tools tab on the toolbar and selecting the Data Type option.
+
+Step 4: Build and configure the model relationship.
+Access Model view to view the tables in your data model.
+
+Connect the Customers and Orders table using the Customer ID fields.
+
+Define the relationship between these two tables as One-to-many.
+
+Change the cardinality selection from its current state to One-to-many.
+
+Establish a Single cross filter direction.
+
+Save the changes made to the data model.
+
+Tip: You can define a relationship by double-clicking the connecting line.
+
+Step 5: Disable Auto date/time.
+Your final task is to disable the Auto date/time feature so you can manually maximize your model’s performance. Access and disable the Auto Date/Time feature.
+
+Apply your changes.
+
+Tip: You can access the Auto Date/Time feature from the Options menu’s Data load option.
